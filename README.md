@@ -31,10 +31,67 @@ Or search for "Atta" in the Cursor Marketplace. Then check **Cursor Settings →
 
 ### Claude Code
 
+Connect via the CLI or the Claude Desktop app.
+
+#### Via CLI (terminal)
+
+**Plugin (recommended)**
+
+**1. Add the marketplace**
+
 ```
 /plugin marketplace add fastview-ai/atta-desktop-plugin
+```
+
+![Adding the Atta marketplace in Claude Code](assets/claude_code/cli/claude_code_add_marketplace_cli.png)
+
+**2. Install the plugin**
+
+```
 /plugin install atta-desktop@atta
 ```
+
+![Installing the atta-desktop plugin in Claude Code](assets/claude_code/cli/claude_code_install_plugin_cli.png)
+
+Run `/mcp` to confirm the `atta-desktop` server is connected.
+
+**Manually**
+
+```
+claude mcp add --scope project --transport http atta-desktop http://127.0.0.1:17340/mcp
+```
+
+![Adding the Atta MCP server manually in Claude Code](assets/claude_code/cli/manual_cli.png)
+
+Use `--scope user` instead of `--scope project` to make it available in every project rather than just the current one.
+
+#### Via Claude Desktop
+
+**Plugin (recommended)**
+
+**1.** Open **Settings → Customize → Plugins**, then click **Add ▾**.
+
+![Claude Desktop Plugins settings](assets/claude_code/desktop/step1.png)
+
+**2.** Choose **Add marketplace**.
+
+![The Add menu with Add marketplace](assets/claude_code/desktop/step2.png)
+
+**3.** Choose **Add from a repository**.
+
+![Add from a repository](assets/claude_code/desktop/step3.png)
+
+**4.** Enter `fastview-ai/atta-desktop-plugin`, then select **Use "fastview-ai/atta-desktop-plugin"**.
+
+![Enter the GitHub repository](assets/claude_code/desktop/step4.png)
+
+**5.** In the **Directory** dialog, open the **Code** tab and pick the **Atta desktop** plugin.
+
+![Select Atta desktop in the plugin directory](assets/claude_code/desktop/step5.png)
+
+**6.** Click **Install**.
+
+![Install the Atta desktop plugin](assets/claude_code/desktop/step6.png)
 
 Run `/mcp` to confirm the `atta-desktop` server is connected.
 
