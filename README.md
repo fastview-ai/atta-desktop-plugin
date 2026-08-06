@@ -16,7 +16,7 @@ The MCP server is **embedded in the Atta Desktop app** and served on the loopbac
 
 ## Prerequisites
 
-- **Atta Desktop**, running with a canvas open. [Download](https://atta.app).
+- **Atta Desktop**, running with a canvas open. [Download](https://atta.app/downloads).
 - One of the supported clients below.
 
 ## Install
@@ -85,7 +85,7 @@ Heavyweight guides (chart / data-app / editing references) are served by the app
 ## Troubleshooting
 
 - **Agent says it can't reach the server** — make sure Atta Desktop is open with a canvas, then restart the agent session so it reconnects. Long-running sessions are the most common cause; restarting re-establishes the connection.
-- **Wrong port** — if multiple Atta instances are open the port shifts within `17340`–`17349`. The exact URL is shown in **Settings → Connect AI agent (MCP)**.
+- **Wrong port** — the agent port is fixed at `17340`, so the default `mcp.json` should just work. You can confirm the URL in **Settings → Connect AI agent (MCP)**. If it reports the port is in use, another process is holding `127.0.0.1:17340` — free it and relaunch Atta Desktop.
 - **Tool-call errors** — LLMs can occasionally get tool parameters wrong; retry, or restart the session.
 
 ## The standard
