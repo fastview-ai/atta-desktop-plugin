@@ -88,6 +88,17 @@ Heavyweight guides (chart / data-app / editing references) are served by the app
 - **Wrong port** — the agent port is fixed at `17340`, so the default `mcp.json` should just work. You can confirm the URL in **Settings → Connect AI agent (MCP)**. If it reports the port is in use, another process is holding `127.0.0.1:17340` — free it and relaunch Atta Desktop.
 - **Tool-call errors** — LLMs can occasionally get tool parameters wrong; retry, or restart the session.
 
+## Local development
+
+Cursor rejects a local plugin whose directory is a symlink pointing outside `~/.cursor/plugins/local`, so a local install must be a real copy:
+
+```sh
+make install-local     # copy this repo into ~/.cursor/plugins/local/atta-desktop
+make uninstall-local   # remove it
+```
+
+Re-run `make install-local` after editing the plugin, then reload Cursor (**Developer: Reload Window**) if it doesn't refresh automatically.
+
 ## The standard
 
 This plugin follows [Agent Plugins 1.0](https://agent-plugins.org): a root `plugin.json` manifest, an `mcp.json` MCP configuration, and portable skills under `skills/`. That portable core is what loads across every compatible client.
