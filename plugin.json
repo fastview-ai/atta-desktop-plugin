@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "atta-desktop",
+  "version": "0.1.0",
+  "description": "A canvas your agent can read and write to — create charts, interactive data apps, SVG diagrams, and run local Python on the Atta Desktop canvas.",
+  "author": {
+    "name": "Atta",
+    "email": "team@atta.app",
+    "url": "https://atta.app"
+  },
+  "homepage": "https://atta.app",
+  "repository": "https://github.com/fastview-ai/atta-desktop-plugin",
+  "license": "MIT",
+  "keywords": [
+    "atta",
+    "desktop",
+    "canvas",
+    "charts",
+    "data-apps",
+    "svg",
+    "python",
+    "mcp",
+    "analytics",
+    "data-visualization"
+  ]
+}

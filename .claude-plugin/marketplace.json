@@ -1,0 +1,18 @@
+{
+  "name": "atta",
+  "owner": {
+    "name": "Atta",
+    "email": "team@atta.app"
+  },
+  "metadata": {
+    "description": "Atta Desktop — a canvas your agent can read and write to, built on web standards.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "atta-desktop",
+      "source": "./",
+      "description": "Connect to Atta Desktop via its local MCP server — create charts, interactive data apps, SVG diagrams, and run Python on the canvas."
+    }
+  ]
+}

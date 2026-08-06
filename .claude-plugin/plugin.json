@@ -1,0 +1,25 @@
+{
+  "name": "atta-desktop",
+  "version": "0.1.0",
+  "description": "A canvas Claude can read and write to — create charts, interactive data apps, SVG diagrams, and run local Python on the Atta Desktop canvas.",
+  "author": {
+    "name": "Atta",
+    "email": "team@atta.app"
+  },
+  "homepage": "https://atta.app",
+  "repository": "https://github.com/fastview-ai/atta-desktop-plugin",
+  "license": "MIT",
+  "keywords": [
+    "atta",
+    "desktop",
+    "canvas",
+    "charts",
+    "data-apps",
+    "svg",
+    "python",
+    "mcp",
+    "analytics"
+  ],
+  "skills": "./skills",
+  "mcpServers": "./mcp.json"
+}
