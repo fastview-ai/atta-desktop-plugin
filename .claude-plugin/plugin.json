@@ -4,7 +4,7 @@
   "description": "A canvas Claude can read and write to — create charts, interactive data apps, SVG diagrams, and run local Python on the Atta Desktop canvas.",
   "author": {
     "name": "Atta",
-    "email": "team@atta.app"
+    "email": "amine@atta.app"
   },
   "homepage": "https://atta.app",
   "repository": "https://github.com/fastview-ai/atta-desktop-plugin",

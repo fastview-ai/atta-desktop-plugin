@@ -5,7 +5,7 @@
   "description": "A canvas your agent can read and write to — create charts, interactive data apps, SVG diagrams, and run local Python on the Atta Desktop canvas.",
   "author": {
     "name": "Atta",
-    "email": "team@atta.app",
+    "email": "amine@atta.app",
     "url": "https://atta.app"
   },
   "homepage": "https://atta.app",
