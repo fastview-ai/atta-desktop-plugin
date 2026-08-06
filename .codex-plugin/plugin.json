@@ -1,0 +1,47 @@
+{
+  "name": "atta-desktop",
+  "version": "0.1.0",
+  "description": "A canvas Codex can read and write to — create charts, interactive data apps, SVG diagrams, and run local Python on the Atta Desktop canvas.",
+  "author": {
+    "name": "Atta",
+    "email": "team@atta.app",
+    "url": "https://atta.app"
+  },
+  "homepage": "https://atta.app",
+  "repository": "https://github.com/fastview-ai/atta-desktop-plugin.git",
+  "license": "MIT",
+  "keywords": [
+    "atta",
+    "desktop",
+    "canvas",
+    "charts",
+    "data-apps",
+    "svg",
+    "python",
+    "mcp",
+    "analytics"
+  ],
+  "skills": "./skills",
+  "mcpServers": "./mcp.json",
+  "interface": {
+    "displayName": "Atta Desktop",
+    "shortDescription": "A canvas your agent can read and write to.",
+    "longDescription": "Atta is an AI data-analysis canvas built on web standards. With this plugin, Codex can create charts, interactive data apps, and SVG diagrams, run local Python, and lay out an analysis on the Atta Desktop canvas — reading and writing blocks in real time.",
+    "developerName": "Atta",
+    "category": "Data",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://atta.app",
+    "privacyPolicyURL": "https://atta.app/privacy",
+    "brandColor": "#0F1117",
+    "composerIcon": "./assets/logo.svg",
+    "logo": "./assets/logo.svg",
+    "defaultPrompt": [
+      "Create a bar chart of quarterly revenue on the Atta canvas",
+      "Build an interactive dashboard in Atta I can filter by region",
+      "Add a metric tree to the canvas breaking revenue into volume × price"
+    ],
+    "screenshots": [
+      "./assets/canvas-snowflake.png"
+    ]
+  }
+}

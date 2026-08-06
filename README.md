@@ -1,8 +1,14 @@
-# Atta Desktop plugin
+<p align="center">
+  <img src="./assets/logo.svg" width="88" alt="Atta" />
+</p>
+
+<h1 align="center">Atta Desktop plugin</h1>
 
 Connect your AI agent to [Atta Desktop](https://atta.app) — a canvas your agent can **read and write to**. Create charts, interactive data apps, and SVG diagrams, run local Python, and lay out an analysis on an infinite canvas, all from a prompt.
 
 Built on the [Agent Plugins](https://agent-plugins.org) open standard, so one install works across Cursor, Claude Code, Codex, VS Code, and other compatible clients.
+
+![An Atta canvas built by an agent — charts, narrative, and callouts](./assets/canvas-snowflake.png)
 
 ## How it works
 
@@ -84,7 +90,16 @@ Heavyweight guides (chart / data-app / editing references) are served by the app
 
 ## The standard
 
-This plugin follows [Agent Plugins 1.0](https://agent-plugins.org): a root `plugin.json` manifest, an `mcp.json` MCP configuration, and portable skills under `skills/`. It also ships a `.claude-plugin/` manifest so Claude Code (not yet on the standard) can install it from a marketplace.
+This plugin follows [Agent Plugins 1.0](https://agent-plugins.org): a root `plugin.json` manifest, an `mcp.json` MCP configuration, and portable skills under `skills/`. That portable core is what loads across every compatible client.
+
+For richer marketplace listings (logo, screenshots, categories) it also ships per-client manifests, since the Agent Plugins manifest is intentionally minimal and carries no branding:
+
+- `.cursor-plugin/plugin.json` — Cursor listing (logo, display name)
+- `.codex-plugin/plugin.json` — Codex listing (logo, screenshots, category)
+- `.claude-plugin/{plugin,marketplace}.json` — Claude Code (not yet on the standard)
+- `.agents/plugins/marketplace.json` — Codex `plugin marketplace add`
+
+All of them reuse the same shared `mcp.json` and `skills/`.
 
 ## License
 

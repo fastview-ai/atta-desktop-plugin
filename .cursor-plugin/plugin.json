@@ -1,0 +1,27 @@
+{
+  "name": "atta-desktop",
+  "displayName": "Atta Desktop",
+  "version": "0.1.0",
+  "description": "A canvas Cursor can read and write to — create charts, interactive data apps, SVG diagrams, and run local Python on the Atta Desktop canvas.",
+  "author": {
+    "name": "Atta",
+    "email": "team@atta.app"
+  },
+  "homepage": "https://atta.app",
+  "repository": "https://github.com/fastview-ai/atta-desktop-plugin",
+  "license": "MIT",
+  "keywords": [
+    "atta",
+    "desktop",
+    "canvas",
+    "charts",
+    "data-apps",
+    "svg",
+    "python",
+    "mcp",
+    "analytics"
+  ],
+  "logo": "./assets/logo.svg",
+  "skills": "./skills",
+  "mcpServers": "./mcp.json"
+}
